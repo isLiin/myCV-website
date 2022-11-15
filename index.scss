@@ -1,0 +1,20 @@
+:root{
+    --color-01 : rgba(255, 255, 255, 0.803);
+}
+
+body{
+    background-image: url('https://i.pinimg.com/originals/cb/cb/9a/cbcb9a5a6ab94c68b6ace3f8ea7c268b.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div#root{
+    width: 75vw;
+    height: 90vh;
+    margin: 5vh auto;
+    border-radius: 4px;
+    background: var(--color-01);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
