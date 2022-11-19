@@ -1,0 +1,14 @@
+div#about-me {
+    width: 100%;
+    height: 30vh;
+}
+
+div#about-me div.content-about-me{
+    position: relative;
+}
+
+div#about-me div.content-about-me,
+div#about-me div.content-about-me img {
+    width: 100%;
+    height: 100%;
+}

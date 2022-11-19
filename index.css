@@ -6,6 +6,7 @@ body{
     background-image: url('https://i.pinimg.com/originals/cb/cb/9a/cbcb9a5a6ab94c68b6ace3f8ea7c268b.gif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    
 }
 
 div#root{
@@ -17,4 +18,14 @@ div#root{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.flex-center{
+    align-items: center;
+    justify-content: center;
 }
