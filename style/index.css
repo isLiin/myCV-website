@@ -1,12 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
-    --color-01 : rgba(255, 255, 255, 0.803);
+    --color-01 : rgba(255, 255, 255, 0.932);
+    --color-02 : #0B1F3A;
+    --color-03 : #143A51;
+    --color-04 : #746C6B;
+    --color-05 : #C49A68;
+    --color-06 : #FFD66D;
 }
 
 body{
     background-image: url('https://i.pinimg.com/originals/cb/cb/9a/cbcb9a5a6ab94c68b6ace3f8ea7c268b.gif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+    font-family: 'Sono', sans-serif;
 }
 
 div#root{
@@ -14,6 +24,8 @@ div#root{
     height: 90vh;
     margin: 5vh auto;
     border-radius: 4px;
+    padding: 1em;
+    color: var(--color-02);
     background: var(--color-01);
     background-position: center;
     background-repeat: no-repeat;
@@ -28,4 +40,8 @@ div#root{
 .flex-center{
     align-items: center;
     justify-content: center;
+}
+
+.flex-between{
+    justify-content: space-between;
 }
