@@ -1,10 +1,14 @@
 <head>
+    <!-- https://www.pngwing.com/ -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/aboutMe.css">
+    <link rel="stylesheet" href="./style/contactMe.css">
+    <link rel="stylesheet" href="./style/softwareMe.css">
     <title>CV Hồ Ngọc Khánh</title>
 </head>
 
@@ -17,19 +21,84 @@
                 </div>
             </div>
             <div class="d-flex flex-between content-about-me">
-                <div class="title">
-                    <h1>Front - end <span style="margin-left: 2em;">developer</span></h1>
+                <div class="title d-flex flex-center">
+                    <h1>S o f t w a r e</h1>
+                    <h1>E n g i n e e r</h1>
+                    <div class="d-flex flex-between">
+                        <h3>H O</h3>
+                        <h3>N G O C</h3>
+                        <h3>K H A N H</h3>
+                    </div>
                 </div>
                 <div class="d-flex flex-between contactor">
-                    <h2 class="d-flex flex-center">about me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat quia dolores rerum
-                        molestiae saepe! Hic, aliquid dolorum repudiandae architecto deserunt reprehenderit alias,
-                        dicta, ex quos voluptates doloribus sapiente maxime!</p>
+                    <h2>about me</h2>
+                    <p><span class="username"></span> is a free person, active and responsible for assigned tasks and
+                        tasks!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-me" class="d-flex flex-between">
+            <div class="contact-item">
+                <i class="fas fa-briefcase"></i>
+                <span>More than <b id="ex-press"></b></span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+84387138599">03 8713 8599</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-birthday-cake"></i>
+                <span>14/06/2001 - Gemini</span>
+            </div>
+        </div>
+
+        <div id="software-me">
+            <h2 class="title">soft ware</h2>
+            <div class=" d-flex flex-between container-software">
+                
+                <div class="software-img">
+                    <img src="./images/working.png" alt="">
+                </div>
+                
+                <div class="group-skill">
+                    <div class="d-flex software-skill">
+                        <div class="skill">
+                            <i class="fab fa-html5"></i>
+                            HTML5
+                        </div>
+                        <div class="experience-html"></div>
+                    </div>
+
+                    <div class="d-flex software-skill">
+                        <div class="skill">
+                            <i class="fab fa-css3-alt"></i>
+                            CSS3
+                        </div>
+                        <div class="experience-CSS"></div>
+                    </div>
+
+                    <div class="d-flex software-skill">
+                        <div class="skill">
+                            <i class="fab fa-html5"></i>
+                            jquery
+                        </div>
+                        <div class="experience-jquery"></div>
+                    </div>
+
+                    <div class="d-flex software-skill">
+                        <div class="skill">
+                            <i class="fab fa-html5"></i>
+                            java
+                        </div>
+                        <div class="experience-java"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Import js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>

@@ -1,0 +1,19 @@
+
+div#software-me > h2,
+div#software-me > div.software-skill .skill{
+    text-transform: uppercase;
+}
+div#software-me > div.container-software{
+    width: 100%;
+    height: auto;
+    padding: 2em;
+}
+
+div.container-software > div{
+    width: 48%;
+}
+
+div.container-software > div:last-child img{
+    width: 100%;
+    height: 100%;
+}

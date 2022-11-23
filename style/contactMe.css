@@ -1,0 +1,29 @@
+
+div#contact-me{
+    margin: 10vh;
+    color: var(--color-04);
+}
+
+div#contact-me div.contact-item,
+div#contact-me div.contact-item a{
+    color: inherit;
+}
+
+
+div#contact-me div.contact-item{
+    padding: 1vh .3vw;
+    transition: .2s ease-in-out;
+}
+
+div#contact-me div.contact-item a {
+    text-decoration: none;
+}
+div#contact-me div.contact-item:hover{
+    cursor: pointer;
+    color: var(--color-02);
+}
+
+div#contact-me div.contact-item a,
+div#contact-me div.contact-item span{
+    margin-left: .4em;
+}

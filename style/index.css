@@ -4,7 +4,7 @@
 }
 
 :root {
-    --color-01: rgba(255, 255, 255, 0.932);
+    --color-01: rgba(255, 255, 255, 0.986);
     --color-02: #0B1F3A;
     --color-03: #143A51;
     --color-04: #746C6B;
@@ -23,12 +23,12 @@ body {
     background-size: 100% 100%;
     font-family: 'Sono', sans-serif;
     padding: 2vh;
-
+    user-select: none;
 }
 
 div#root {
     width: 75vw;
-    height: 350vh;
+    height: 250vh;
     margin: 5vh auto;
     border-radius: 4px;
     padding: 1em;
