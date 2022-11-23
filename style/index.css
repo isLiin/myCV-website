@@ -1,27 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --color-01 : rgba(255, 255, 255, 0.932);
-    --color-02 : #0B1F3A;
-    --color-03 : #143A51;
-    --color-04 : #746C6B;
-    --color-05 : #C49A68;
-    --color-06 : #FFD66D;
+:root {
+    --color-01: rgba(255, 255, 255, 0.932);
+    --color-02: #0B1F3A;
+    --color-03: #143A51;
+    --color-04: #746C6B;
+    --color-05: #C49A68;
+    --color-06: #FFD66D;
 }
 
-body{
-    background-image: url('https://i.pinimg.com/originals/cb/cb/9a/cbcb9a5a6ab94c68b6ace3f8ea7c268b.gif');
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-image: url('/images/766eb13332cfafaf0362b811bd60f454.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     font-family: 'Sono', sans-serif;
+    padding: 2vh;
+
 }
 
-div#root{
+div#root {
     width: 75vw;
-    height: 90vh;
+    height: 350vh;
     margin: 5vh auto;
     border-radius: 4px;
     padding: 1em;
@@ -30,6 +37,7 @@ div#root{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 4px 0 white;
 }
 
 
@@ -37,11 +45,11 @@ div#root{
     display: flex;
 }
 
-.flex-center{
+.flex-center {
     align-items: center;
     justify-content: center;
 }
 
-.flex-between{
+.flex-between {
     justify-content: space-between;
 }

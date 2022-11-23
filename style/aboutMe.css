@@ -13,8 +13,8 @@ div#about-me div.content-about-me{
     width: 49%;
 }
 div#about-me div.content-about-me .circle{
-    width: 340px;
-    height: 98%;
+    width: 360px;
+    height: 330px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 6px 0 var(--color-02);
