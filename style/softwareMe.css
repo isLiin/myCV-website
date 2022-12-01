@@ -6,14 +6,45 @@ div#software-me > div.software-skill .skill{
 div#software-me > div.container-software{
     width: 100%;
     height: auto;
-    padding: 2em;
+    padding: 2em 0;
 }
 
 div.container-software > div{
-    width: 48%;
+    width: 47%;
 }
 
-div.container-software > div:last-child img{
+div.container-software > div img{
     width: 100%;
     height: 100%;
+}
+
+div.group-skill{
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+div.group-skill div.software-skill{
+    margin: 1em 0;
+    margin-left: 1em;
+    width: 100%;
+    text-transform: capitalize;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.group-skill div.software-skill .skill{
+    text-transform: uppercase;
+}
+
+div.group-skill div.software-skill svg{
+    width: 25px;
+    margin: 0 .3em;
+}
+
+#group-skill h3::before{
+    content: '❖';
+    left: -1em;
+    color: var(--color-04);
+    position: absolute;
 }
