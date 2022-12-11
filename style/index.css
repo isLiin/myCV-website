@@ -27,7 +27,8 @@ body {
 }
 
 div#root {
-    width: 75vw;
+    max-width: 1150px;
+    width: 100%;
     height: 250vh;
     margin: 5vh auto;
     border-radius: 4px;
@@ -52,4 +53,7 @@ div#root {
 
 .flex-between {
     justify-content: space-between;
+}
+h2.title{
+    text-transform: uppercase;
 }

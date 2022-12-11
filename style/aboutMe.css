@@ -1,6 +1,6 @@
 div#about-me {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
 }
 
 div#about-me div.content-about-me{
@@ -29,7 +29,7 @@ div#about-me div.content-about-me .title{
 }
 div#about-me div.content-about-me .title h1{
     font-weight: 600;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 div#about-me div.content-about-me .title div{

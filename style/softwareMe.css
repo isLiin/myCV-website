@@ -1,16 +1,16 @@
 
-div#software-me > h2,
 div#software-me > div.software-skill .skill{
     text-transform: uppercase;
 }
 div#software-me > div.container-software{
     width: 100%;
-    height: auto;
+    height: 60vh;
     padding: 2em 0;
 }
 
 div.container-software > div{
     width: 47%;
+    justify-content: space-between;
 }
 
 div.container-software > div img{
@@ -27,7 +27,7 @@ div.group-skill{
 div.group-skill div.software-skill{
     margin: 1em 0;
     margin-left: 1em;
-    width: 100%;
+    width: 90%;
     text-transform: capitalize;
     justify-content: space-between;
     align-items: center;

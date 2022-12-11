@@ -80,23 +80,54 @@ const experienceSkills = [
  */
 const experienceToolAPP = [
     {
-        icon : '../images/logo/Eclipse-Luna-Logo.svg.png',
-        titleName : 'Eclipse',
+        icon: '../images/logo/logovscode.png',
+        titleName: 'Visual studio code',
         experience: getYear(new Date('2021-07-07'))
     },
     {
-        icon : '../images/logo/logovscode.png',
-        titleName : 'Visual studio code',
+        icon: '../images/logo/Postman-logo-orange-2021_1155x.png',
+        titleName: 'Postman',
+        experience: getYear(new Date('2021-07-07'))
+    }, {
+        icon: '../images/logo/Google_2015_logo.svg.png',
+        titleName: 'Google',
+        experience: getYear(new Date('2021-07-07'))
+    }, {
+        icon: '../images/logo/Microsoft-Teams-Emblem.png',
+        titleName: 'Teams',
+        experience: getYear(new Date('2021-07-07'))
+    }, {
+        icon: '../images/logo/microsoft-sql-server-logo.png',
+        titleName: 'MS SQL',
+        experience: getYear(new Date('2021-07-07'))
+    }, {
+        icon: '../images/logo/Eclipse-Luna-Logo.svg.png',
+        titleName: 'Eclipse',
         experience: getYear(new Date('2021-07-07'))
     },
     {
-        icon : '../images/logo/Eclipse-Luna-Logo.svg.png',
-        titleName : 'Eclipse',
+        icon: '../images/logo/Sublime-Text-4-FI-new-1.png',
+        titleName: 'Sublime Text',
         experience: getYear(new Date('2021-07-07'))
     },
-    {
-        icon : '../images/logo/Eclipse-Luna-Logo.svg.png',
-        titleName : 'Eclipse',
-        experience: getYear(new Date('2021-07-07'))
-    }
 ]
+
+/**
+ * Commont study
+ */
+const educationsStudy = [
+    {
+        title : 'Trường Đại học Công nghệ Thông tin & Truyền thông Việt Hàn - ĐHĐN',
+        position: 'student',
+        subject : 'Information Technology',
+        yearStart : '08/2019',
+        yearEnd : '05/2021'
+    },
+    {
+        title : 'FPT Software Da Nang',
+        position: 'student',
+        subject : 'Information Technology',
+        yearStart : '03/2021',
+        yearEnd : '08/2021'
+    },
+];

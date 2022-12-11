@@ -1,0 +1,26 @@
+
+
+div#education-me{
+    width: 90%;
+}
+
+div#education-me ul {
+    position: relative;
+    padding-left: 4em;
+}
+
+div#education-me ul li{
+    list-style-type: none;
+}
+
+div#education-me ul li.title-edu{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+div#education-me ul li.title-edu::before{
+    content: '×͜×';
+    position: absolute;
+    left: 2em;
+    top: 0;
+    color: gray;
+}

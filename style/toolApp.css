@@ -1,0 +1,15 @@
+
+div#tool-app{
+    width: 100%;
+    margin: 5vh 0 10vh 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    opacity: 0.7;
+}
+div#tool-app img{
+    width: 200px;
+    height: 75px;
+    margin: .5em 2em;
+}

@@ -47,19 +47,60 @@ const renderExperienceSkill = (skills) => {
  * @author KhanhHN9
  */
 const renderApp = (apps) => {
-    const groupApp = $('#tool-app');
-
+    const groupApp = document.createElement('div');
+    $(groupApp).attr('id', 'tool-app');
 
     apps.forEach(app => {
-        const item = `<img src="${app.icon}" alt="${app.titleName}">`;
-        groupApp.append(item);
+        const itemImage = document.createElement('img');
+        $(itemImage).attr('src', app.icon);
+        $(itemImage).attr('alt', app.titleName);
+        groupApp.append(itemImage);
     });
-    // <marquee width="100%" height="100%" direction="right">
-    //         </marquee>
-
     return groupApp;
 }
 
+/**
+ * render education
+ * 
+ * @returns education
+ * @author KhanhHN9
+ */
+const educationGroup = (schools) => {
+    const educationGroup = document.createElement('div');
+    $(educationGroup).attr('id', 'education-me');
+
+    const titleEducation = document.createElement('h2');
+    $(titleEducation).attr('class', 'title')
+    $(titleEducation).html('Education')
+    educationGroup.append(titleEducation);
+    
+    schools.forEach(school => {
+        educationGroup.append(education(school));
+    })
+
+    return educationGroup;
+}
+
+/**
+ * child function education
+ * 
+ * @param {*} school 
+ */
+const education = (school) =>{
+    const schoolEducation = document.createElement('ul');
+    const titleSchool = document.createElement('li');
+    const discriptionSchool = document.createElement('li');
+
+    $(titleSchool).attr('class', 'title-edu')
+    $(discriptionSchool).attr('class', 'discription-edu')
+
+    $(titleSchool).html(school.title);
+    $(discriptionSchool).html(`${school.yearStart} - ${school.yearEnd} : ${school.subject}`);
+
+    schoolEducation.append(titleSchool);
+    schoolEducation.append(discriptionSchool);
+    return schoolEducation;
+}
 
 /**
  * Start
@@ -76,6 +117,8 @@ $(document).ready(function () {
     // Render list skill da hoc
     renderExperienceSkill(experienceSkills);
 
-    // Render list app
-    renderApp(experienceToolAPP);
+    // Render app
+    $('#root').append(renderApp(experienceToolAPP));
+    // Render education
+    $('#root').append(educationGroup(educationsStudy));
 });
