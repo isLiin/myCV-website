@@ -112,7 +112,7 @@ $(document).ready(function () {
     $('.userName').html('Hồ Ngọc Khánh')
 
     // Them thoi gian lam viec vao contact
-    $('#ex-press').html(`${getYear(new Date('2021-01-07'))} real.`);
+    $('#ex-press').html(`${getYear(new Date('2021-01-07'))}.`);
 
     // Render list skill da hoc
     renderExperienceSkill(experienceSkills);
