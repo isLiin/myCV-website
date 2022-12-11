@@ -1,4 +1,7 @@
 
+div#software-me {
+    position: relative;
+}
 div#software-me > div.software-skill .skill{
     text-transform: uppercase;
 }

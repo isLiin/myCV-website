@@ -1,3 +1,22 @@
+/**
+ * 
+ * @returns About me description 
+ */
+const aboutMe = () => {
+    const descriptions = [
+        `I want you to see a strong guy who can be applied to the real world of work and bring value
+        to the smart people that I can bring together.`,
+        `I want to learn more and gain more experience in helping people to grow and develop in the
+        form of wormwood and grass that helps everyone as a company.`
+    ]
+    const groupDesc = document.createElement('ul');
+    descriptions.forEach(desc => {
+        const itemDesc = document.createElement('li');
+        $(itemDesc).html(desc);
+        groupDesc.append(itemDesc);
+    });
+    return groupDesc;
+}
 
 /**
  * Render danh sach skill vao component.
@@ -73,7 +92,7 @@ const educationGroup = (schools) => {
     $(titleEducation).attr('class', 'title')
     $(titleEducation).html('Education')
     educationGroup.append(titleEducation);
-    
+
     schools.forEach(school => {
         educationGroup.append(education(school));
     })
@@ -86,7 +105,7 @@ const educationGroup = (schools) => {
  * 
  * @param {*} school 
  */
-const education = (school) =>{
+const education = (school) => {
     const schoolEducation = document.createElement('ul');
     const titleSchool = document.createElement('li');
     const discriptionSchool = document.createElement('li');
@@ -108,8 +127,7 @@ const education = (school) =>{
  */
 $(document).ready(function () {
 
-    // My name
-    $('.userName').html('Hồ Ngọc Khánh')
+    $('.contactor').append(aboutMe);
 
     // Them thoi gian lam viec vao contact
     $('#ex-press').html(`${getYear(new Date('2021-09-01'))}.`);

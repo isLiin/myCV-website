@@ -117,17 +117,19 @@ const experienceToolAPP = [
  */
 const educationsStudy = [
     {
-        title : 'Trường Đại học Công nghệ Thông tin & Truyền thông Việt Hàn - ĐHĐN',
+        title : 'vietnam - korea university of information and communication technology',
         position: 'student',
         subject : 'Information Technology',
         yearStart : '08/2019',
-        yearEnd : '05/2021'
+        yearEnd : '05/2021',
+        link : 'http://vku.udn.vn/'
     },
     {
         title : 'FPT Software Da Nang',
         position: 'student',
-        subject : 'Information Technology',
+        subject : 'Full-Stack Developer for Fresher',
         yearStart : '03/2021',
-        yearEnd : '08/2021'
+        yearEnd : '08/2021',
+        link : 'https://www.fpt-software.com/'
     },
 ];
