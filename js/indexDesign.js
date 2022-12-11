@@ -122,6 +122,27 @@ const education = (school) => {
 }
 
 /**
+ * 
+ * @returns experienceWorking
+ */
+const experienceWorking = () => {
+    const experienceWorking = document.createElement('div');
+    $(experienceWorking).attr('id', 'experience-working');
+
+    // Title
+    const title = document.createElement('h2');
+    $(title).attr('class', 'title');
+    $(title).html('experience');
+
+    const dics = document.createElement('p');
+    $(dics).attr('class', 'ex-press')
+
+    experienceWorking.append(title);
+    experienceWorking.append(dics);
+    return experienceWorking;
+};
+
+/**
  * Start
  * @author KhanhHN9
  */
@@ -129,14 +150,17 @@ $(document).ready(function () {
 
     $('.contactor').append(aboutMe);
 
-    // Them thoi gian lam viec vao contact
-    $('#ex-press').html(`${getYear(new Date('2021-09-01'))}.`);
-
     // Render list skill da hoc
     renderExperienceSkill(experienceSkills);
 
     // Render app
     $('#root').append(renderApp(experienceToolAPP));
+    // Render experience working
+    $('#root').append(experienceWorking);
     // Render education
     $('#root').append(educationGroup(educationsStudy));
+
+
+    // Them thoi gian lam viec vao contact
+    $('.ex-press').html(`${getYear(new Date('2021-09-01'))}.`);
 });
