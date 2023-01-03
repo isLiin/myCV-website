@@ -1,30 +1,36 @@
-
-
-div#education-me{
+div#education-me,
+div#experience-working {
     width: 90%;
     position: relative;
 }
 
-div#education-me ul {
+div#education-me ul,
+div#experience-working ul {
     position: relative;
     padding-left: 4em;
 }
 
-div#education-me ul li{
+div#education-me ul li,
+div#experience-working ul li {
     list-style-type: none;
 }
 
-div#education-me ul li.title-edu{
-    font-weight: 700;
+div#education-me ul li.title-edu,
+div#experience-working ul li.title-job {
+    font-weight: bold;
     text-transform: capitalize;
 }
-div#education-me ul li.title-edu::before{
+
+div#education-me ul li.title-edu::before,
+div#experience-working ul li.title-job::before {
     content: '×͜×';
     position: absolute;
     left: 2em;
     top: 0;
     color: gray;
 }
-li.discription-edu{
+
+li.discription-edu,
+li.discription-job {
     color: var(--color-04);
 }

@@ -94,18 +94,73 @@ const educationGroup = (schools) => {
     educationGroup.append(titleEducation);
 
     schools.forEach(school => {
-        educationGroup.append(education(school));
+        educationGroup.append(educationRender(school));
     })
 
     return educationGroup;
 }
 
 /**
+ * 
+ * @returns experienceWorking
+ */
+ const experienceWorking = () => {
+    const experienceWorkingGroup = document.createElement('div');
+    $(experienceWorking).attr('id', 'experience-working');
+
+    // Title
+    const title = document.createElement('h2');
+    $(title).attr('class', 'title');
+    $(title).html('experience');
+    experienceWorkingGroup.append(title);
+
+    // render experience
+    jobsWorking.forEach(job => {
+        experienceWorkingGroup.append(workingJobsRender(job));
+    });
+
+    return experienceWorkingGroup;
+};
+
+
+/**
+ * render list certificate
+ * @author KhanhHN9
+ * @returns certificateGroup
+ */
+ const certificateGroup = (certificates) => {
+    const certificateGroup = document.createElement('div');
+    $(certificateGroup).attr('id', 'certificateGroup');
+
+    // Title
+    const title = document.createElement('h2');
+    $(title).attr('class', 'title');
+    $(title).html('certificate');
+    
+    // Group images
+    const listImgCertificate = document.createElement('div');
+    $(listImgCertificate).attr('class', 'd-flex certificate-group');
+    
+    // render certificate images
+    certificates.forEach(certificate => {
+        const itemCertificate = document.createElement('img');
+        $(itemCertificate).attr('title', certificate.title);
+        $(itemCertificate).attr('src', certificate.url);
+        listImgCertificate.append(itemCertificate);
+    });
+    
+    certificateGroup.append(title);
+    certificateGroup.append(listImgCertificate);
+
+    return certificateGroup;
+};
+
+/**
  * child function education
  * 
  * @param {*} school 
  */
-const education = (school) => {
+const educationRender = (school) => {
     const schoolEducation = document.createElement('ul');
     const titleSchool = document.createElement('li');
     const discriptionSchool = document.createElement('li');
@@ -122,25 +177,40 @@ const education = (school) => {
 }
 
 /**
+ * child function experience
  * 
- * @returns experienceWorking
+ * @param {*} job 
  */
-const experienceWorking = () => {
-    const experienceWorking = document.createElement('div');
-    $(experienceWorking).attr('id', 'experience-working');
+const workingJobsRender = (job) => {
+    const experienceWorking = document.createElement('ul');
+    const titleExperience = document.createElement('li');
+    const timelineExperience = document.createElement('li');
+    const discriptionExperience = document.createElement('li');
 
-    // Title
-    const title = document.createElement('h2');
-    $(title).attr('class', 'title');
-    $(title).html('experience');
+    $(titleExperience).attr('class', 'title-job')
+    $(timelineExperience).attr('class', 'discription-job')
 
-    const dics = document.createElement('p');
-    $(dics).attr('class', 'ex-press')
+    $(titleExperience).html(job.title);
+    $(timelineExperience).html(`${job.subject} : ${job.yearStart} - ${job.yearEnd}`);
+    $(discriptionExperience).html(`<em>Discription</em> : ${job.discription}`);
 
-    experienceWorking.append(title);
-    experienceWorking.append(dics);
+    experienceWorking.append(titleExperience);
+    experienceWorking.append(timelineExperience);
+    experienceWorking.append(discriptionExperience);
     return experienceWorking;
-};
+}
+
+
+const software = () => {
+    return `<div id="software-me">
+                <h2 class="title">soft ware</h2>
+                <div class=" d-flex flex-between container-software">
+                    <div class="software-img"><img src="./images/working.png" alt=""></div>
+                    <div id="group-skill" class="d-flex group-skill"></div>
+                </div>
+            </div>`;
+}
+
 
 /**
  * Start
@@ -148,18 +218,20 @@ const experienceWorking = () => {
  */
 $(document).ready(function () {
 
+    // render about me
     $('.contactor').append(aboutMe);
 
-    // Render list skill da hoc
-    renderExperienceSkill(experienceSkills);
-
-    // Render app
-    $('#root').append(renderApp(experienceToolAPP));
-    // Render experience working
-    $('#root').append(experienceWorking);
     // Render education
     $('#root').append(educationGroup(educationsStudy));
-
+    // Render experience working
+    $('#root').append(experienceWorking);
+    // Render list skill da hoc
+    $('#root').append(software());
+    renderExperienceSkill(experienceSkills);
+    // Render app
+    $('#root').append(renderApp(experienceToolAPP));
+    // Render certificate
+    $('#root').append(certificateGroup(certificates));
 
     // Them thoi gian lam viec vao contact
     $('.ex-press').html(`${getYear(new Date('2021-09-01'))}.`);
