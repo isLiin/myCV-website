@@ -222,4 +222,9 @@ const project = [
         img : './images/project/oren.png',
         url : 'https://isliin.github.io/Project_Template/'
     },
+    {
+        title : 'oren',
+        img : './images/project/besnik.png',
+        url : 'https://isliin.github.io/Project_Template/'
+    },
 ]
