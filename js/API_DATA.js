@@ -209,3 +209,17 @@ const certificates = [
         url : './images/Certificate/CodeLearn_certification (12).png',
     }
 ]
+
+
+const project = [
+    {
+        title : 'avigato',
+        img : './images/project/avigato.png',
+        url : 'https://isliin.github.io/Project_04122021/'
+    },
+    {
+        title : 'oren',
+        img : './images/project/oren.png',
+        url : 'https://isliin.github.io/Project_Template/'
+    },
+]
