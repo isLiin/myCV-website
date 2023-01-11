@@ -1,4 +1,9 @@
 /**
+ * @author KhanhHN9
+ * @Date 2022/11/15
+ */
+
+/**
  * Render infor of me
  * 
  * @returns About me description 
@@ -24,7 +29,6 @@ const aboutMe = () => {
  * 
  * @param {*} skills Danh sach skill da hoc
  * @returns Object
- * @author KhanhHN9
  */
 const renderExperienceSkill = (skills) => {
     const groupSkill = $('#group-skill');
@@ -64,7 +68,6 @@ const renderExperienceSkill = (skills) => {
  * 
  * @param {*} apps Danh sach app da qua su dung
  * @returns GroupApp
- * @author KhanhHN9
  */
 const renderApp = (apps) => {
     const groupApp = document.createElement('div');
@@ -83,7 +86,6 @@ const renderApp = (apps) => {
  * render education
  * 
  * @returns education
- * @author KhanhHN9
  */
 const educationGroup = (schools) => {
     const educationGroup = document.createElement('div');
@@ -127,7 +129,6 @@ const educationGroup = (schools) => {
 
 /**
  * render list certificate
- * @author KhanhHN9
  * @returns certificateGroup
  */
  const certificateGroup = (certificates) => {
@@ -222,7 +223,7 @@ const software = () => {
 
 /**
  * Start
- * @author KhanhHN9
+ * @returns GUI
  */
 $(document).ready(function () {
 
