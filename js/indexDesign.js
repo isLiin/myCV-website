@@ -217,11 +217,6 @@ const software = () => {
  * @author KhanhHN9
  */
 $(document).ready(function () {
-    var text = "hoc lap trinh ja ja ja ?"
-
-
-    console.log(text.replace(/ja/ig, "java"))
-
 
     // render about me
     $('.contactor').append(aboutMe);
