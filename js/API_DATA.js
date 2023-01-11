@@ -140,7 +140,7 @@ const educationsStudy = [
 const jobsWorking = [
     {
         title: 'FPT Software',
-        discription: 'Được tham gia 2 dự án bảo hiểm của nhật bản. Đươc học hỏi và phát triển bản thân về kỹ năng chuyên môn và làm việc nhóm.',
+        discription: 'Participated and worked with 2 insurance projects in Japan. Cultivated and learned through each stage from planning, designing, implementing and testing software development, I improved my professional skills and teamwork.',
         subject: 'Software Developer',
         yearStart: '01/07/2021',
         yearEnd: '31/12/2021'
