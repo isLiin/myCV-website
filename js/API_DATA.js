@@ -152,55 +152,55 @@ const jobsWorking = [
  */
 const certificates = [
     {
-        title : 'base java',
+        title : 'Java fundamentals',
         url : './images/Certificate/CodeLearn_certification.png',
     },
     {
-        title : 'base java',
+        title : 'Computer communication & Network',
         url : './images/Certificate/CodeLearn_certification (1).png',
     },
     {
-        title : 'base java',
+        title : 'Computer software',
         url : './images/Certificate/CodeLearn_certification (2).png',
     },
     {
-        title : 'base java',
+        title : 'Introduction to SQL',
         url : './images/Certificate/CodeLearn_certification (3).png',
     },
     {
-        title : 'base java',
+        title : 'SQL Essential',
         url : './images/Certificate/CodeLearn_certification (4).png',
     },
     {
-        title : 'base java',
+        title : 'Basic SQL for Developer',
         url : './images/Certificate/CodeLearn_certification (5).png',
     },
     {
-        title : 'base java',
+        title : 'Java SE Programming Essential',
         url : './images/Certificate/CodeLearn_certification (6).png',
     },
     {
-        title : 'base java',
+        title : 'Hibernate ORM',
         url : './images/Certificate/CodeLearn_certification (7).png',
     },
     {
-        title : 'base java',
+        title : 'Javascript basic',
         url : './images/Certificate/CodeLearn_certification (8).png',
     },
     {
-        title : 'base java',
+        title : 'Front End Esstials',
         url : './images/Certificate/CodeLearn_certification (9).png',
     },
     {
-        title : 'base java',
+        title : 'Python Basic',
         url : './images/Certificate/CodeLearn_certification (10).png',
     },
     {
-        title : 'base java',
+        title : 'Object Oriented-Programming in Java',
         url : './images/Certificate/CodeLearn_certification (11).png',
     },
     {
-        title : 'base java',
+        title : 'HTML & CSS in F8',
         url : './images/Certificate/CodeLearn_certification (12).png',
     }
 ]
