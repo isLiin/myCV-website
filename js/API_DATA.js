@@ -83,7 +83,7 @@ const experienceSkills = [
 /**
  * Commont use tool
  */
-const experienceToolAPP = [
+const experienceToolsAPP = [
     {
         icon: '../images/logo/logovscode.png',
         titleName: 'Visual studio code',
@@ -211,7 +211,7 @@ const certificates = [
 ]
 
 
-const project = [
+const projects = [
     {
         title : 'avigato',
         img : './images/project/avigato.png',
