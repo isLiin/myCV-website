@@ -1,4 +1,5 @@
 /**
+ * Render infor of me
  * 
  * @returns About me description 
  */
@@ -101,6 +102,7 @@ const educationGroup = (schools) => {
 }
 
 /**
+ * Component experience working
  * 
  * @returns experienceWorking
  */
@@ -159,6 +161,7 @@ const educationGroup = (schools) => {
  * child function education
  * 
  * @param {*} school 
+ * @returns label school
  */
 const educationRender = (school) => {
     const schoolEducation = document.createElement('ul');
@@ -180,6 +183,7 @@ const educationRender = (school) => {
  * child function experience
  * 
  * @param {*} job 
+ * @returns label Job
  */
 const workingJobsRender = (job) => {
     const experienceWorking = document.createElement('ul');
@@ -200,7 +204,11 @@ const workingJobsRender = (job) => {
     return experienceWorking;
 }
 
-
+/**
+ * child function experience
+ * 
+ * @returns component Software
+ */
 const software = () => {
     return `<div id="software-me">
                 <h2 class="title">soft ware</h2>
